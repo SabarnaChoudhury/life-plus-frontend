@@ -1,0 +1,20 @@
+<div class="doctor-detail-container">
+    <div class="doctor-card">
+      <img [src]="doctor.image" alt="{{ doctor.name }}" class="doctor-image" />
+      <div class="doctor-info">
+        <h2>{{ doctor.name }}</h2>
+        <p><strong>Specialty:</strong> {{ doctor.specialty }}</p>
+        <p><strong>Experience:</strong> {{ doctor.experience }} years</p>
+        <p *ngIf="doctor.email"><strong>Email:</strong> {{ doctor.email }}</p>
+        <p *ngIf="doctor.contact"><strong>Contact:</strong> {{ doctor.contact }}</p>
+      </div>
+    </div>
+    <div class="bio-section" *ngIf="doctor.bio">
+      <h3>About {{ doctor.name }}</h3>
+      <p>{{ doctor.bio }}</p>
+    </div>
+  </div>
+
+  <button routerLink="/doctors" class="btn-back">Back to Doctor List</button>
+
+  

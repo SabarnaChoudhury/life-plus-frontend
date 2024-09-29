@@ -1,0 +1,21 @@
+<div class="patient-detail-container">
+    <div class="patient-card">
+      <img [src]="patient.image" alt="{{ patient.name }}" class="patient-image" />
+      <div class="patient-info">
+        <h2>{{ patient.name }}</h2>
+        <p><strong>Age:</strong> {{ patient.age }}</p>
+        <p><strong>Diagnosis:</strong> {{ patient.diagnosis }}</p>
+        <p *ngIf="patient.email"><strong>Email:</strong> {{ patient.email }}</p>
+        <p *ngIf="patient.contact"><strong>Contact:</strong> {{ patient.contact }}</p>
+        <p *ngIf="patient.address"><strong>Address:</strong> {{ patient.address }}</p>
+      </div>
+    </div>
+    <div class="additional-info">
+      <h3>Medical History</h3>
+      <p>Include more details here, like past diagnoses, treatments, or a brief medical history...</p>
+    </div>
+  </div>
+
+  <button routerLink="/patients" class="btn-back">Back to Patient List</button>
+
+  

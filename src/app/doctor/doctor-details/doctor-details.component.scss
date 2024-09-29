@@ -1,0 +1,54 @@
+.doctor-detail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .doctor-card {
+    display: flex;
+    align-items: center;
+    background: #eaf1f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .doctor-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 2px solid #ddd;
+  }
+  
+  .doctor-info {
+    font-family: Arial, sans-serif;
+  }
+  
+  .bio-section {
+    width: 70%;
+    margin-top: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Georgia', serif;
+  }
+
+  .btn-back {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-back:hover {
+    background-color: #0056b3;
+  }
+  
+  
